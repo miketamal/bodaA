@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Ferni & César</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* 📌 ESTILO GENERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf3e6;
+            color: #5e4b3a;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, rgba(250,243,230,0.9), rgba(250,243,230,0.9)), 
+                              url('https://transparenttextures.com/patterns/cream-paper.png');
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d4c1ab;
+            padding-bottom: 0.5rem;
+        }
+
+        .quote {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.6rem;
+            margin: 1.5rem 0;
+            color: #7b6852;
+        }
+
+        /* 📌 FECHA DEL EVENTO */
+        .evento-fecha {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #5e4b3a;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .evento-fecha i {
+            color: #8b6f56;
+            margin-right: 8px;
+        }
+
+        .confirmacion, .location-item, .countdown {
+            font-size: 1.1rem;
+            color: #5e4b3a;
+            margin: 1.2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        /* 📌 ICONOS Y ENLACES */
+        .whatsapp-icon {
+            font-size: 1.2rem;
+            color: #5e4b3a;
+            transition: color 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            color: #25D366;
+        }
+
+        .confirmacion a {
+            text-decoration: none;
+            color: #5e4b3a;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .confirmacion a:hover {
+            text-decoration: underline;
+            color: #8b6f56;
+        }
+
+        .locations {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .location-item i {
+            font-size: 1.3rem;
+            color: #8b6f56;
+        }
+
+        .location-text a {
+            text-decoration: none;
+            color: #5e4b3a;
+            font-weight: bold;
+        }
+
+        .location-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* 📌 CUENTA REGRESIVA */
+        .countdown {
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+
+        /* 📌 RESPONSIVE DESIGN */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .quote {
+                font-size: 1.4rem;
+            }
+
+            .confirmacion {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Boda Ferni & César</h1>
+        
+        <p class="quote">"El amor no cuenta el tiempo, sino los momentos que lo hacen eterno"</p>
+        
+        <p style="margin-bottom: 1rem; font-style: italic; color: #7b6852;">
+            Acompáñennos en este día lleno de alegría, promesas y nuevos comienzos.
+        </p>
+
+        <!-- 📌 FECHA DEL EVENTO -->
+        <div class="evento-fecha">
+            <i class="fa-solid fa-calendar-days"></i> Sábado, 17 de mayo de 2025
+        </div>
+
+        <!-- 📌 Sección de confirmación -->
+        <div class="confirmacion">
+            <a href="https://wa.me/qr/5SI6D7PIPLOBL1" target="_blank">
+                <i class="fa-brands fa-whatsapp whatsapp-icon"></i> Confirma tu asistencia, para que nadie falte en nuestra Boda
+            </a>
+        </div>
+
+        <!-- 📌 Ubicaciones -->
+        <ul class="locations">
+            <li class="location-item">
+                <i class="fa-solid fa-church"></i>
+                <span class="location-text">
+                    <a href="https://maps.app.goo.gl/htcJwKDncKPUigxM9" target="_blank">Capilla de San Pedro</a>
+                </span>
+            </li>
+            <li class="location-item">
+                <i class="fa-solid fa-home"></i>
+                <span class="location-text">
+                    <a href="https://maps.app.goo.gl/rPdQcncAZxWnSDD9A" target="_blank">Quinta San José</a>
+                </span>
+            </li>
+            <li class="location-item">
+                <i class="fa-solid fa-gift"></i>
+                <span class="location-text">
+                    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51614208" target="_blank">Mesa de Regalos</a>
+                </span>
+            </li>
+        </ul>
+
+        <!-- 📌 Cuenta regresiva -->
+        <div class="countdown" id="countdown">
+            Faltan: <span id="timer"></span> para el gran día 🎉
+        </div>
+    </div>
+
+    <!-- 📌 Script de cuenta regresiva -->
+    <script>
+        function actualizarCuentaRegresiva() {
+            const fechaBoda = new Date("May 17, 2025 13:00:00").getTime();
+            const ahora = new Date().getTime();
+            const diferencia = fechaBoda - ahora;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            document.getElementById("timer").innerHTML = `${dias} días y ${horas} horas`;
+
+            if (diferencia < 0) {
+                document.getElementById("timer").innerHTML = "¡Hoy es el gran día! 🎉";
+            }
+        }
+
+        setInterval(actualizarCuentaRegresiva, 1000);
+        actualizarCuentaRegresiva();
+    </script>
+</body>
+</html>
