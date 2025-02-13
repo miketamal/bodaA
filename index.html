@@ -20,8 +20,8 @@
         }
 
         body {
-            background: #faf3e6;
-            color: #5e4b3a;
+            background: #FFFFFF; /* Fondo blanco */
+            color: #003366; /* Azul marino */
             font-family: 'Raleway', sans-serif;
             text-align: center;
             min-height: 100vh;
@@ -29,14 +29,12 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background-image: linear-gradient(to bottom, rgba(250,243,230,0.9), rgba(250,243,230,0.9)), 
-                              url('https://transparenttextures.com/patterns/cream-paper.png');
         }
 
         .container {
             max-width: 600px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.1);
@@ -45,25 +43,28 @@
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #d4c1ab;
+            margin-bottom: 1.4rem;
+            border-bottom: 2px solid #003366;
             padding-bottom: 0.5rem;
         }
 
         .quote {
             font-family: 'Great Vibes', cursive;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin: 1.5rem 0;
-            color: #7b6852;
+            color: #003366;
         }
 
-        /* 📌 FECHA DEL EVENTO */
+        /* 📌 FECHA DEL EVENTO (ajustes de ancho) */
         .evento-fecha {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #5e4b3a;
-            margin-top: 1rem;
-            padding: 1rem;
+            color: #003366;
+            /* Ajustes para hacer la caja más estrecha */
+            max-width: 400px;
+            width: 90%;
+            margin: 1.2rem auto;
+            padding: 0.8rem;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -71,15 +72,22 @@
         }
 
         .evento-fecha i {
-            color: #8b6f56;
+            color: #003366;
+	        background: #F5F5F5;
             margin-right: 8px;
         }
 
-        .confirmacion, .location-item, .countdown {
+        /* 📌 CAJAS DE CONFIRMACIÓN, UBICACIONES Y CUENTA REGRESIVA (ajustes de ancho) */
+        .confirmacion,
+        .location-item,
+        .countdown {
             font-size: 1.1rem;
-            color: #5e4b3a;
-            margin: 1.2rem 0;
-            padding: 1rem;
+            color: #003366;
+            /* Ajustes para hacer las cajas más estrechas */
+            max-width: 400px;
+            width: 90%;
+            margin: 1.2rem auto;
+            padding: 0.8rem;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -87,13 +95,12 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            width: 100%;
         }
 
         /* 📌 ICONOS Y ENLACES */
         .whatsapp-icon {
             font-size: 1.2rem;
-            color: #5e4b3a;
+            color: #003366;
             transition: color 0.3s ease;
         }
 
@@ -103,7 +110,7 @@
 
         .confirmacion a {
             text-decoration: none;
-            color: #5e4b3a;
+            color: #003366;
             font-weight: bold;
             display: flex;
             align-items: center;
@@ -112,7 +119,7 @@
 
         .confirmacion a:hover {
             text-decoration: underline;
-            color: #8b6f56;
+            color: #002244;
         }
 
         .locations {
@@ -123,12 +130,12 @@
 
         .location-item i {
             font-size: 1.3rem;
-            color: #8b6f56;
+            color: #003366;
         }
 
         .location-text a {
             text-decoration: none;
-            color: #5e4b3a;
+            color: #003366;
             font-weight: bold;
         }
 
@@ -139,8 +146,7 @@
         /* 📌 CUENTA REGRESIVA */
         .countdown {
             font-weight: bold;
-            font-size: 1.3rem;
-            padding: 10px;
+            font-size: 1.1rem;
         }
 
         /* 📌 RESPONSIVE DESIGN */
@@ -162,11 +168,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Boda Ferni & César</h1>
+        <h1>Ferni  &  César</h1>
         
         <p class="quote">"El amor no cuenta el tiempo, sino los momentos que lo hacen eterno"</p>
         
-        <p style="margin-bottom: 1rem; font-style: italic; color: #7b6852;">
+        <p style="margin-bottom: 1rem; font-style: italic; color: #003366;">
             Acompáñennos en este día lleno de alegría, promesas y nuevos comienzos.
         </p>
 
@@ -178,7 +184,7 @@
         <!-- 📌 Sección de confirmación -->
         <div class="confirmacion">
             <a href="https://wa.me/qr/5SI6D7PIPLOBL1" target="_blank">
-                <i class="fa-brands fa-whatsapp whatsapp-icon"></i> Confirma tu asistencia, para que nadie falte en nuestra Boda
+                <i class="fa-brands fa-whatsapp whatsapp-icon"></i> ¿Nos acompañas? ¡Confirma tu asistencia!
             </a>
         </div>
 
@@ -206,14 +212,14 @@
 
         <!-- 📌 Cuenta regresiva -->
         <div class="countdown" id="countdown">
-            Faltan: <span id="timer"></span> para el gran día 🎉
+            Faltan: <span id="timer"></span> para el gran día 
         </div>
     </div>
 
     <!-- 📌 Script de cuenta regresiva -->
     <script>
         function actualizarCuentaRegresiva() {
-            const fechaBoda = new Date("May 17, 2025 13:00:00").getTime();
+            const fechaBoda = new Date("May 17, 2025 14:00:00").getTime();
             const ahora = new Date().getTime();
             const diferencia = fechaBoda - ahora;
 
