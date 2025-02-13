@@ -146,7 +146,7 @@
         /* 📌 CUENTA REGRESIVA */
         .countdown {
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         /* 📌 RESPONSIVE DESIGN */
@@ -224,7 +224,7 @@
             const diferencia = fechaBoda - ahora;
 
             const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
 
             document.getElementById("timer").innerHTML = `${dias} días y ${horas} horas`;
 
